@@ -1,0 +1,58 @@
+body {
+  width: 100vw;
+  margin: 0;
+  font-family: cursive;
+}
+
+.navBar {
+  height: 3vh;
+  width: 100vw;
+  background-color: white;
+}
+
+.links {
+  padding-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: white;
+}
+
+.navBarLink {
+  margin: 8px;
+  border: 1px solid #ff8000;
+  border-radius: 15px;
+  padding: 3px;
+  color: #ff8000;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+}
+
+.intro {
+  width: 100vw;
+  height: 70vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2018/07/31/01/41/summer-3573995_1280.png");
+  text-align: center;
+  text-shadow: 2px 2px 3px #ff8000;
+  color: black;
+  font-size: 2.2em;
+}
+
+.description {
+  border: 2px solid #ff8000;
+  border-radius: 20px;
+  padding: 10px;
+  color: black;
+  font-size: 1.25em;
+}
+/*# sourceMappingURL=style.css.map */
