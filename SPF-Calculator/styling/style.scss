@@ -1,15 +1,15 @@
 @import "variables";
-
+@import "mixins";
 body {
     width: 100vw;
     margin: 0;
-    font-family: cursive;
+    font-family: sans-serif;
 }
 
 .navBar {
     height: 3vh;
     width: 100vw;
-    background-color: white;
+    background-color: $bgColor;
 }
 
 .links {
@@ -17,7 +17,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    background-color: white;
+    background-color: $bgColor;
 }
 
 .navBarLink {
@@ -28,26 +28,135 @@ body {
     color: $mainColor;
     text-decoration: none;
     text-shadow: 1px 1px 1px black;
-
 }
 
 .intro {
-    width: 100vw;
-    height: 70vh;
+    width: 99vw;
+    margin-top: 30px;
+    border: 2px solid $mainColor;
+    border-radius: 20px;
+}
+
+.introPic {
+    margin: 0 15vw;
+    height: 60vh;
     box-sizing: border-box;
-    padding: 20px;
-    background-image: url('https://cdn.pixabay.com/photo/2018/07/31/01/41/summer-3573995_1280.png');
+    padding: 20vh 30vw;
+    background-image: url($bgPic);
+    background-repeat: no-repeat;
+}
+
+.introText {
     text-align: center;
     text-shadow: 2px 2px 3px $mainColor;
     color: black;
-    font-size: 2.2em;
+    font-size: 2.5em;
 }
 
 .description {
-    border: 2px solid $mainColor;
-    border-radius: 20px;
     padding: 10px;
     color: black;
     font-size: 1.25em;
+}
 
+.choice {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 90vh;
+    border: 2px solid $mainColor;
+    border-radius: 20px;
+    padding: 0 10vw;
+    color: grey;
+}
+
+input[type="radio"] {
+    display: none;
+}
+.skinTypeContainer {
+    width: 90vw;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 45% 45%;
+    grid-row-gap: 15%;
+}
+.typeOne {
+    @include customColorInput;
+    background-color: $typeOne;
+    grid-area: 1/1/2/2;
+}
+
+.typeTwo {
+    @include customColorInput;
+    background-color: $typeTwo;
+    grid-area: 1/2/2/3;
+}
+
+.typeThree {
+    @include customColorInput;
+    background-color: $typeThree;
+    grid-area: 1/3/2/4;
+}
+
+.typeFour {
+    @include customColorInput;
+    background-color: $typeFour;
+    grid-area: 2/1/3/2;
+}
+
+.typeFive {
+    @include customColorInput;
+    background-color: $typeFive;
+    grid-area: 2/2/3/3;
+}
+
+.typeSix {
+    @include customColorInput;
+    background-color: $typeSix;
+    grid-area: 2/3/3/4;
+}
+
+.bodyPartContainer {
+    display: flex;
+    flex-direction: row;
+}
+.face {
+    width: 30vw;
+    height: 25vh;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.body {
+    margin: 0 15px;
+    width: 30vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.bodyPart,
+.skinColor,
+.skinType {
+    border-bottom: 1px solid $mainColor;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: darkseagreen;
+    }
+
+    .navBar {
+        width: 60vw;
+        margin: 5vh 20vw;
+    }
+
+    .intro {
+        background-color: $bgColor;
+        margin: 5vh 20vw;
+        width: 60vw;
+        display: flex;
+        flex-direction: row;
+    }
 }
