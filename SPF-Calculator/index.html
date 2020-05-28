@@ -16,95 +16,95 @@
             </section>
         </nav>
     </header>
-    <section class='container'>
-        <main class='main'>
-            <section class='intro'>
-                <h1 class='introText'>Want to know what SPF product you should use?</h1>
-                <section class='introPic'>
-                </section>
-                <section class='description'>
-                    <p>
-                        Find out with our UV index calculator! Choose a location and a date and we'll tell you what
-                        products
-                        you should have in your sunscreen care kit. It's that easy!
-                    </p>
-                </section>
+    <main class='main'>
+        <section class='intro'>
+            <h1 class='introText'>Want to know what SPF product you should use?</h1>
+            <section class='introPic'>
             </section>
+            <section class='description'>
+                <p>
+                    Find out with our UV index calculator! Choose a location and a date and we'll tell you what
+                    products
+                    you should have in your sunscreen care kit. It's that easy!
+                </p>
+                <button class='nextButton'>NEXT</button>
+            </section>
+        </section>
 
-            <section class='choice'>
-                <form>
-                    <section class='bodyPart'>
-                        <p>I want a product for my:</p>
-                        <div class='bodyPartContainer'>
+        <section class='choice sectionStyle'>
+            <form>
+                <section class='bodyPart choicesDesign'>
+                    <p>I want a product for my:</p>
+                    <div class='bodyPartContainer'>
                         <input id='face' type='radio' name='bodyPart' value='face'>
                         <label for='face'>FACE
-                            <img src='https://i.ya-webdesign.com/images/face-silhouette-png.png'
-                                class='face' />
+                            <img src='' class='face' />
                         </label>
                         <input id='body' type='radio' name='bodyPart' value='body'>
                         <label for='body'>BODY
-                            <img src='https://st.depositphotos.com/1878179/2994/v/450/depositphotos_29944365-stock-illustration-beautiful-woman-body-in-swimsuit.jpg'
-                                class='body' />
+                            <img src='' class='body' />
                         </label>
                     </div>
-                    </section>
+                </section>
 
-                    <section class='skinColor'>
-                        <p>My skin color is:</p>
-                        <div class='skinTypeContainer'>
-                            <label for='typeOne'>
-                                <input id='typeOne' type='radio' name='skinColor' value='typeOne'>
-                                <div class='typeOne'></div>
-                            </label>
+                <section class='skinType choicesDesign'>
+                    <p>My skin color is:</p>
+                    <div class='skinTypeContainer'>
+                        <label for='typeOne'>
+                            <input id='typeOne' type='radio' name='skinColor' value='typeOne'>
+                            <div class='typeOne'></div>
+                        </label>
 
-                            <label for='typeTwo'>
-                                <input id='typeTwo' type='radio' name='skinColor' value='typeTwo'>
-                                <div class='typeTwo'></div>
-                            </label>
+                        <label for='typeTwo'>
+                            <input id='typeTwo' type='radio' name='skinColor' value='typeTwo'>
+                            <div class='typeTwo'></div>
+                        </label>
 
-                            <label for='typeThree'>
-                                <input id='typeThree' type='radio' name='skinColor' value='typeThree'>
-                                <div class='typeThree'></div>
-                            </label>
+                        <label for='typeThree'>
+                            <input id='typeThree' type='radio' name='skinColor' value='typeThree'>
+                            <div class='typeThree'></div>
+                        </label>
 
-                            <label for='typeFour'>
-                                <input id='typeFour' type='radio' name='skinColor' value='typeFour'>
-                                <div class='typeFour'></div>
-                            </label>
+                        <label for='typeFour'>
+                            <input id='typeFour' type='radio' name='skinColor' value='typeFour'>
+                            <div class='typeFour'></div>
+                        </label>
 
-                            <label for='typeFive'>
-                                <input id='typeFive' type='radio' name='skinColor' value='typeFive'>
-                                <div class='typeFive'></div>
-                            </label>
+                        <label for='typeFive'>
+                            <input id='typeFive' type='radio' name='skinColor' value='typeFive'>
+                            <div class='typeFive'></div>
+                        </label>
 
-                            <label for='typeSix'>
-                                <input id='typeSix' type='radio' name='skinColor' value='typeSix'>
-                                <div class='typeSix'></div>
-                            </label>
-                        </div>
-                    </section>
+                        <label for='typeSix'>
+                            <input id='typeSix' type='radio' name='skinColor' value='typeSix'>
+                            <div class='typeSix'></div>
+                        </label>
+                    </div>
+                </section>
 
-                    <section class='skinType'>
-                        <p>My skin is:</p>
-                        <input id='drySkin' type='radio' name='skinType' value='face'>
-                        <label for='drySkin'>Dry/Sensitive</label><br>
-                        <input id='oilySkin' type='radio' name='skinType' value='body'>
-                        <label for='oilySkin'>Oily/Acne-prone</label><br>
-                    </section>
-                </form>
-            </section>
+                <section class='skinTexture choicesDesign'>
+                    <p>My skin is:</p>
+                    <input id='drySkin' type='radio' name='skinTexture' value='face'>
+                    <label for='drySkin'>DRY - SENSITIVE</label><br>
+                    <input id='oilySkin' type='radio' name='skinTexture' value='body'>
+                    <label for='oilySkin'>OILY - ACNE-PRONE</label><br>
+                </section>
+                <button class='nextButton'>NEXT</button>
+            </form>
+        </section>
 
-            <section class='location'>
-                <div class='map'></div>
-                <div class='data'></div>
-                <div class='calculateSPFBtn'></div>
-            </section>
+        <section class='location sectionStyle'>
+            <div class='map'></div>
+            <div class='data'></div>
+            <div class='calculateSPFBtn'></div>
+        </section>
 
-            <section class='result'></section>
-        </main>
+        <section class='result sectionStyle'>
 
-        <script src='script.js'>
-        </script>
+        </section>
+    </main>
+
+    <script src='script.js'></script>
 </body>
 
 </html>

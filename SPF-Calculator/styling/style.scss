@@ -6,8 +6,9 @@ body {
     font-family: sans-serif;
 }
 
+// navigation bar
 .navBar {
-    height: 3vh;
+    // height: 3vh;
     width: 100vw;
     background-color: $bgColor;
 }
@@ -30,18 +31,20 @@ body {
     text-shadow: 1px 1px 1px black;
 }
 
+// first page
+
 .intro {
-    width: 99vw;
-    margin-top: 30px;
-    border: 2px solid $mainColor;
+    width: 100vw;
+    height: 95vh;
+    margin-top: 5vh;
+    box-sizing: border-box;
     border-radius: 20px;
 }
 
 .introPic {
+    height: 30vh;
     margin: 0 15vw;
-    height: 60vh;
-    box-sizing: border-box;
-    padding: 20vh 30vw;
+    border: 1px solid $mainColor;
     background-image: url($bgPic);
     background-repeat: no-repeat;
 }
@@ -50,36 +53,59 @@ body {
     text-align: center;
     text-shadow: 2px 2px 3px $mainColor;
     color: black;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .description {
-    padding: 10px;
+    padding: 0 10px;
+    text-align: center;
     color: black;
     font-size: 1.25em;
 }
 
+.nextButton {
+    width: 200px;
+    height: 30px;
+    margin: 15px;
+    border: 1px solid $mainColor;
+    background-color: white;
+    font-size: 1.25em;
+}
+
+// sections display style
+.sectionStyle {
+    @include mobileSection;
+}
+
+// second page
 .choice {
     box-sizing: border-box;
-    width: 100vw;
-    height: 90vh;
-    border: 2px solid $mainColor;
-    border-radius: 20px;
-    padding: 0 10vw;
+    padding: 0 40px;
     color: grey;
 }
 
-input[type="radio"] {
-    display: none;
+.bodyPartContainer {
+    display: flex;
+    flex-direction: row;
 }
+
+.face, .body {
+    margin: 0 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
 .skinTypeContainer {
     width: 90vw;
-    height: 20vh;
+    height: 30vh;
     display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 45% 45%;
-    grid-row-gap: 15%;
+    grid-row-gap: 5%;
 }
+
 .typeOne {
     @include customColorInput;
     background-color: $typeOne;
@@ -116,47 +142,63 @@ input[type="radio"] {
     grid-area: 2/3/3/4;
 }
 
-.bodyPartContainer {
-    display: flex;
-    flex-direction: row;
-}
-.face {
-    width: 30vw;
-    height: 25vh;
-    margin: 0 15px;
-    display: flex;
-    flex-direction: row;
-}
-
-.body {
-    margin: 0 15px;
-    width: 30vw;
-    height: 25vh;
-    display: flex;
-    flex-direction: row;
-}
-
-.bodyPart,
-.skinColor,
-.skinType {
+.choicesDesign {
+    box-sizing: border-box;
     border-bottom: 1px solid $mainColor;
+    padding: 10px;
 }
 
-@media only screen and (min-width: 600px) {
+
+
+
+@media only screen and (min-width: 750px) {
+
     body {
         background-color: darkseagreen;
     }
 
+    // navigation bar
     .navBar {
-        width: 60vw;
-        margin: 5vh 20vw;
+        width: 70vw;
+        height: 5vh;
+        margin: 0 15vw;
     }
 
+    // first page
     .intro {
+        @include desktopSection;
+        padding: 50px;
         background-color: $bgColor;
-        margin: 5vh 20vw;
-        width: 60vw;
-        display: flex;
-        flex-direction: row;
+    }
+
+    .description {
+        padding: 0 100px;
+    }
+
+    // sections display style
+    .sectionStyle {
+        @include desktopSection;
+    }
+
+    // second page
+    .choice {
+        max-height: 70vw;
+        background-image: url('');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .skinTypeContainer {
+        width: 20vw;
+        height: 20vh;
+    }
+
+    .choicesDesign {
+        width: 20vw;
+        margin:5px;
+        box-sizing: border-box;
+        border-bottom: 1px solid $mainColor;
+        padding: 7px;
+
     }
 }
