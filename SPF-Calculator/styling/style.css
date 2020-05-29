@@ -52,6 +52,7 @@ body {
 }
 
 .introText {
+  margin: 0;
   text-align: center;
   text-shadow: 2px 2px 3px grey;
   color: black;
@@ -94,23 +95,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
-.face, .body {
+.face,
+.body {
   margin: 0 15px;
   width: 50px;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .skinTypeContainer {
@@ -210,6 +204,70 @@ body {
   padding: 10px;
 }
 
+.location {
+  color: grey;
+}
+
+.locationContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map {
+  width: 300px;
+  height: 305px;
+  margin: 10px 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.date {
+  margin: 0 25px;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#day {
+  width: 200px;
+  height: 25px;
+}
+
+#hours {
+  width: 205px;
+  height: 30px;
+}
+
+.calculateSPFBtn {
+  width: 200px;
+  height: 30px;
+  margin: 15px;
+  border: 1px solid grey;
+  background-color: white;
+  font-size: 1.25em;
+}
+
 @media only screen and (min-width: 750px) {
   body {
     background-color: darkseagreen;
@@ -245,7 +303,6 @@ body {
     background-color: white;
   }
   .choice {
-    max-height: 70vw;
     background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;
@@ -261,6 +318,9 @@ body {
             box-sizing: border-box;
     border-bottom: 1px solid grey;
     padding: 7px;
+  }
+  .locationContainer {
+    float: right;
   }
 }
 /*# sourceMappingURL=style.css.map */

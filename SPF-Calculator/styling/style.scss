@@ -50,6 +50,7 @@ body {
 }
 
 .introText {
+    margin: 0;
     text-align: center;
     text-shadow: 2px 2px 3px $mainColor;
     color: black;
@@ -64,12 +65,7 @@ body {
 }
 
 .nextButton {
-    width: 200px;
-    height: 30px;
-    margin: 15px;
-    border: 1px solid $mainColor;
-    background-color: white;
-    font-size: 1.25em;
+    @include button;
 }
 
 // sections display style
@@ -86,15 +82,14 @@ body {
 
 .bodyPartContainer {
     display: flex;
-    flex-direction: row;
 }
 
-.face, .body {
+.face,
+.body {
     margin: 0 15px;
     width: 50px;
     height: 50px;
     display: flex;
-    flex-direction: row;
 }
 
 .skinTypeContainer {
@@ -148,11 +143,50 @@ body {
     padding: 10px;
 }
 
+// third page
+.location {
+    color: $mainColor;
+}
 
+.locationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.map {
+    width: 300px;
+    height: 305px;
+    margin: 10px 25px;
+    box-sizing: border-box;
+}
+
+.date {
+    margin: 0 25px;
+    border-bottom: 1px solid $mainColor;
+    border-top: 1px solid $mainColor;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#day {
+    width: 200px;
+    height: 25px;
+}
+
+#hours {
+    width: 205px;
+    height: 30px;
+}
+
+.calculateSPFBtn {
+    @include button;
+}
 
 @media only screen and (min-width: 750px) {
-
     body {
         background-color: darkseagreen;
     }
@@ -182,8 +216,7 @@ body {
 
     // second page
     .choice {
-        max-height: 70vw;
-        background-image: url('');
+        background-image: url("");
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -195,10 +228,13 @@ body {
 
     .choicesDesign {
         width: 20vw;
-        margin:5px;
+        margin: 5px;
         box-sizing: border-box;
         border-bottom: 1px solid $mainColor;
         padding: 7px;
+    }
 
+    .locationContainer {
+        float: right;
     }
 }

@@ -34,7 +34,7 @@
         <section class='choice sectionStyle'>
             <form>
                 <section class='bodyPart choicesDesign'>
-                    <p>I want a product for my:</p>
+                    <p>I WANT SUNSCREEN FOR:</p>
                     <div class='bodyPartContainer'>
                         <input id='face' type='radio' name='bodyPart' value='face'>
                         <label for='face'>FACE
@@ -48,7 +48,7 @@
                 </section>
 
                 <section class='skinType choicesDesign'>
-                    <p>My skin color is:</p>
+                    <p>MY SKIN COLOR IS:</p>
                     <div class='skinTypeContainer'>
                         <label for='typeOne'>
                             <input id='typeOne' type='radio' name='skinColor' value='typeOne'>
@@ -83,7 +83,7 @@
                 </section>
 
                 <section class='skinTexture choicesDesign'>
-                    <p>My skin is:</p>
+                    <p>MY SKIN IS:</p>
                     <input id='drySkin' type='radio' name='skinTexture' value='face'>
                     <label for='drySkin'>DRY - SENSITIVE</label><br>
                     <input id='oilySkin' type='radio' name='skinTexture' value='body'>
@@ -94,16 +94,37 @@
         </section>
 
         <section class='location sectionStyle'>
-            <div class='map'></div>
-            <div class='data'></div>
-            <div class='calculateSPFBtn'></div>
+            <div class='locationContainer'>
+                <div class='map'>
+                    <iframe class='googleMap'
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124551.3662569987!2d27.509049102569964!3d47.16246976592058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cafb7cf639ddbb%3A0x7ccb80da5426f53c!2zSWHImWk!5e0!3m2!1sro!2sro!4v1590755785073!5m2!1sro!2sro"
+                        width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class='date'>
+                    <label for='day'>SELECT DAY:</label>
+                    <input id='day' type='date'>
+
+                    <label for='hours'>SELECT HOURS:</label>
+                    <select id='hours' name='hours'>
+                        <option name='earlyMorning'>6.00-8.00</option>
+                        <option name='morning'>8.00-10.00</option>
+                        <option name='lateMorning'>10.00-12.00</option>
+                        <option name='lunch'>12.00-14.00</option>
+                        <option name='afternoon'>14.00-16.00</option>
+                        <option name='evening'>16.00-18.00</option>
+                    </select>
+
+                </div>
+                <button class='calculateSPFBtn'>CALCULATE SPF</button>
+            </div>
         </section>
 
         <section class='result sectionStyle'>
 
         </section>
     </main>
-
+    <script src='map.js'></script>
     <script src='script.js'></script>
 </body>
 
