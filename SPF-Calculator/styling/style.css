@@ -1,3 +1,12 @@
+.moreProducts {
+  width: 200px;
+  height: 30px;
+  margin: 15px;
+  border: 1px solid grey;
+  background-color: white;
+  font-size: 1.25em;
+}
+
 body {
   width: 100vw;
   margin: 0;
@@ -85,8 +94,6 @@ body {
 }
 
 .choice {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 0 40px;
   color: grey;
 }
@@ -198,8 +205,6 @@ body {
 }
 
 .choicesDesign {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   border-bottom: 1px solid grey;
   padding: 10px;
 }
@@ -268,9 +273,29 @@ body {
   font-size: 1.25em;
 }
 
+.displayResult {
+  padding: 3vh 2vw;
+  text-align: center;
+  text-shadow: 2px 2px 3px grey;
+  color: black;
+  font-size: 2em;
+}
+
+.recommendedProduct {
+  text-align: center;
+  color: grey;
+}
+
+.bestMatch {
+  width: 150px;
+  height: 300px;
+  margin: 5vh auto;
+  border: 1px solid grey;
+}
+
 @media only screen and (min-width: 750px) {
   body {
-    background-color: darkseagreen;
+    background-color: grey;
   }
   .navBar {
     width: 70vw;

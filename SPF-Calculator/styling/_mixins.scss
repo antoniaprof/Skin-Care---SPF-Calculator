@@ -31,3 +31,14 @@
     border-radius: 0;
     background-color: $bgColor;
 }
+
+@mixin mobilebestMatch {
+    width: 150px;
+    height: 300px;
+    margin: 5vh auto;
+    border: 1px solid $mainColor;
+}
+
+.moreProducts {
+    @include button;
+}
