@@ -32,13 +32,15 @@
     background-color: $bgColor;
 }
 
-@mixin mobilebestMatch {
+@mixin productCard {
     width: 150px;
-    height: 300px;
-    margin: 5vh auto;
-    border: 1px solid $mainColor;
+    height: 260px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    background-color: white;
 }
 
-.moreProducts {
-    @include button;
-}
