@@ -30,11 +30,11 @@
                     products
                     you should have in your sunscreen care kit. It's that easy!
                 </p>
-                <button class='nextButton'>NEXT</button>
+                <button class='nextButton hideSection1'>NEXT</button>
             </section>
         </section>
 
-          <!-- second page -->
+        <!-- second page -->
         <section class='choice sectionStyle'>
             <form>
                 <section class='bodyPart choicesDesign'>
@@ -93,11 +93,11 @@
                     <input id='oilySkin' type='radio' name='skinTexture' value='body'>
                     <label for='oilySkin'>OILY - ACNE-PRONE</label><br>
                 </section>
-                <button class='nextButton'>NEXT</button>
             </form>
+            <button class='nextButton hideSection2'>NEXT</button>
         </section>
 
-          <!-- third page -->
+        <!-- third page -->
         <section class='location sectionStyle'>
             <div class='locationContainer'>
                 <div class='map'>
@@ -121,21 +121,19 @@
                     </select>
 
                 </div>
-                <button class='calculateSPFBtn'>CALCULATE SPF</button>
+                <button class='calculateSPFBtn hideSection3'>CALCULATE SPF</button>
             </div>
         </section>
 
-          <!-- fourth page -->
+        <!-- fourth page -->
         <section class='result sectionStyle'>
-            <div class='displayResult'>RECOMMENDED SPF: </div>
-            <div class='recommendedProduct'>
-                Best match:
-                <div class='bestMatch product'></div>
-                <button class='moreProducts'>MORE PRODUCTS</button>
-            </div>
+            <div class='displayResult'></div>
+            <p class='displayResultText'>Best match:</p>
+            <div class='recommendedProducts'></div>
+            <button class='moreProducts hideSection4'>MORE PRODUCTS</button>
         </section>
 
-          <!-- fifth page -->
+        <!-- fifth page -->
         <section class='products sectionStyle'>
             <div class='productCard face oily SPF50+'>
                 <img class='productImage'
@@ -191,13 +189,13 @@
                     alt='Photoderm Spray SPF 30' />
                 <div class='productDescription'>Photoderm Spray SPF 30</div>
             </div>
-            <div class='productCard body SPF15'>
+            <div class='productCard face body oily sensitive SPF15 SPF0'>
                 <img class='productImage'
                     src='https://www.bioderma.com.ro/sites/default/files/styles/produits_tabs/public/bronz_15_spray.jpg?itok=zuHy5-Jf'
                     alt='Photoderm BRONZ Spray SPF 15' />
                 <div class='productDescription'>Photoderm BRONZ Spray SPF 15</div>
             </div>
-         
+
         </section>
 
     </main>

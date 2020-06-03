@@ -45,6 +45,7 @@ body {
     border: 1px solid $mainColor;
     background-image: url($bgPic);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .introText {
@@ -73,6 +74,7 @@ body {
 
 // second page
 .choice {
+    display: none;
     padding: 0 40px;
     color: grey;
 }
@@ -141,6 +143,7 @@ body {
 
 // third page
 .location {
+    display: none;
     color: $mainColor;
 }
 
@@ -182,6 +185,10 @@ body {
 }
 
 // fourth page
+.result {
+    display:none;
+}
+
 .displayResult {
     padding: 3vh 2vw;
     text-align: center;
@@ -190,15 +197,18 @@ body {
     font-size: 2em;
 }
 
-.recommendedProduct {
+.displayResultText {
     text-align: center;
     color: $mainColor;
 }
 
-.bestMatch {
-    @include productCard;
-    margin: 5vh auto;
+.recommendedProducts {
+    height: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
 }
+
 
 .moreProducts {
     @include button;
@@ -206,7 +216,7 @@ body {
 
 // fifth page
 .products {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     overflow-y: auto;
 }
@@ -279,6 +289,11 @@ body {
     // third page
     .locationContainer {
         float: right;
+    }
+
+    // fourth page
+    .recommendedProducts::-webkit-scrollbar {
+        display: none;
     }
 
     // fifth page

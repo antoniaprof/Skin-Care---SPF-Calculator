@@ -47,6 +47,7 @@ body {
   border: 1px solid grey;
   background-image: url("");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .introText {
@@ -83,6 +84,7 @@ body {
 }
 
 .choice {
+  display: none;
   padding: 0 40px;
   color: grey;
 }
@@ -199,6 +201,7 @@ body {
 }
 
 .location {
+  display: none;
   color: grey;
 }
 
@@ -260,6 +263,10 @@ body {
   font-size: 1.25em;
 }
 
+.result {
+  display: none;
+}
+
 .displayResult {
   padding: 3vh 2vw;
   text-align: center;
@@ -268,31 +275,19 @@ body {
   font-size: 2em;
 }
 
-.recommendedProduct {
+.displayResultText {
   text-align: center;
   color: grey;
 }
 
-.bestMatch {
-  width: 150px;
-  height: 260px;
-  border-radius: 20px;
+.recommendedProducts {
+  height: 270px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  background-color: white;
-  margin: 5vh auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow-y: auto;
 }
 
 .moreProducts {
@@ -305,9 +300,7 @@ body {
 }
 
 .products {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   overflow-y: auto;
@@ -393,6 +386,9 @@ body {
   }
   .locationContainer {
     float: right;
+  }
+  .recommendedProducts::-webkit-scrollbar {
+    display: none;
   }
   .products {
     padding: 0 3vw;
