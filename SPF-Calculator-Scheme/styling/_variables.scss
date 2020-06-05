@@ -1,10 +1,15 @@
-$mainColor: grey;
+$mainColor: tan;
+$secondColor: black;
 $bgColor: white;
 
-$bgPic: '';
 $typeOne: rgb(251, 233, 221);
 $typeTwo: rgb(247, 219, 197);
 $typeThree: rgb(234, 202, 155);
 $typeFour: rgb(220, 188, 131);
 $typeFive: rgb(180, 131, 72);
 $typeSix: rgb(76, 42, 21);
+
+$secondBorder: 1px solid $secondColor;
+$mainBorder: 1px solid $mainColor;
+
+$bgPic: "../resources/66dccf0935143cb6ec839c87585ebef6.png";

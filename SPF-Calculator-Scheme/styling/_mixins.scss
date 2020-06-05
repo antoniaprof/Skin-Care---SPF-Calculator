@@ -1,6 +1,7 @@
 @mixin customColorInput {
     width: 40px;
     height: 40px;
+    margin: 0 15px;
     border: 1px solid grey;
     border-radius: 50%;
 }
@@ -9,8 +10,10 @@
     width: 200px;
     height: 30px;
     margin: 15px;
-    border: 1px solid $mainColor;
-    background-color: white;
+    border: 1px solid $secondColor;
+    background-color: $bgColor;
+    text-shadow: 1px 1px 1px $secondColor;
+    color: $mainColor;
     font-size: 1.25em;
 }
 
@@ -18,18 +21,24 @@
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
-    border: 2px solid $mainColor;
+    border: 2px solid grey;
     border-radius: 20px;
 }
 
 @mixin desktopSection {
-    width: 70vw;
-    height: 80vh;
-    margin: 5vh 15vw;
+    float: right;
+    width: 50vw;
+    height: 90vh;
     box-sizing: border-box;
     border: none;
     border-radius: 0;
     background-color: $bgColor;
+}
+
+@mixin alignItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @mixin productCard {
@@ -39,8 +48,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
-    text-align: center;
-    background-color: white;
+    align-items: center;
+    background-color: $bgColor;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
