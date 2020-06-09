@@ -56,7 +56,7 @@ const getApi = () => {
             let afternoon = [data.result[12], data.result[13]].map(obj => obj.uv);
             let evening = [data.result[14], data.result[15]].map(obj => obj.uv);
 
-            let calculateMaxim = array => {
+            let calculateMaximum = array => {
                 let maxim = array[0];
                 for (let i = 0; i < array.length; i++) {
                     if (array[i] > maxim) {
@@ -70,24 +70,25 @@ const getApi = () => {
             let hours = document.querySelector('#hours')
             let uvIndex = 0;
             let option = hours.selectedIndex;
-            if (option === 0) {
-                uvIndex = calculateMaxim(earlyMorning);
-
-            } else if (option === 1) {
-                uvIndex = calculateMaxim(morning);
-
-            } else if (option === 2) {
-                uvIndex = calculateMaxim(lateMorning);
-
-            } else if (option === 3) {
-                uvIndex = calculateMaxim(lunch);
-
-            } else if (option === 4) {
-                uvIndex = calculateMaxim(afternoon);
-
-            } else if (option === 4) {
-                uvIndex = calculateMaxim(evening);
-            }
+            switch (option) {
+                case 0:
+                    uvIndex = calculateMaximum(earlyMorning);
+                    break;
+                case 1:
+                    uvIndex = calculateMaximum(morning);
+                    break;
+                case 2:
+                    uvIndex = calculateMaximum(lateMorning);
+                    break;
+                case 3:
+                    uvIndex = calculateMaximum(lunch);
+                    break;
+                case 4:
+                    uvIndex = calculateMaximum(afternoon);
+                    break;
+                case 5:
+                    uvIndex = calculateMaximum(evening);
+            };
 
             // uvIndex -> skin type => spf -> body => body + spf class product
             // uvIndex -> skin type => spf -> face -> oily => face + oily + spf class product
@@ -188,10 +189,10 @@ const getApi = () => {
             // show the SPF value to the user
             const showSPFValue = () => {
                 let displayResult = document.querySelector('.displayResult')
-                if (SPFvalue() == 'SPF0') {
+                if (SPFvalue() === 'SPF0') {
                     displayResult.textContent = 'NO SPF NEDEED! CONSIDER WEARING A HYDRATING CREAM';
                 } else {
-                displayResult.textContent = 'RECOMMENDED SPF: ' + SPFvalue();
+                    displayResult.textContent = 'RECOMMENDED SPF: ' + SPFvalue();
                 }
             }
 
@@ -202,7 +203,6 @@ const getApi = () => {
                 let result = [];
                 if (document.querySelector('#body').checked) {
                     result = Array.from(document.querySelectorAll('.body'))
-
                 } else if (document.querySelector('#face').checked) {
                     result = Array.from(document.querySelectorAll('.face'))
                 }
