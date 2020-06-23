@@ -11,7 +11,8 @@
 
     input:hover,
     select:hover,
-    button:hover {
+    button:hover,
+    label:hover {
         cursor: pointer;
     }
 
@@ -22,13 +23,12 @@
         border: none;
         border-bottom: 1px solid $mainColor;
         justify-content: space-between;
-
     }
 
     .logo {
-        margin: 0;
         width: 100px;
         height: 100px;
+        margin: 0;
     }
 
     // first page
@@ -44,6 +44,22 @@
         text-shadow: 1px 1px 1px $secondColor;
         color: $mainColor;
     }
+
+    .mobileSPF {
+        display: none;
+    }
+
+    .desktopSPF {
+        width: 100px;
+        height: 140px;
+        display: inline-block;
+        position: relative;
+        top: 30px;
+        background-image: url("../resources/product.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
     .introPic {
         display: none;
     }

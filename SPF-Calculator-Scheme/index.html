@@ -2,7 +2,7 @@
 <html lang='en'>
 
 <head>
-    <link rel='stylesheet' href='styling\style.css'>
+    <link rel='stylesheet' href='styling/style.css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skin Care - SPF Calculator</title>
 </head>
@@ -11,49 +11,52 @@
     <!-- first page -->
     <header>
         <nav class='navBar'>
-                <img class='logo' src='./resources/logo.png'/>
-            <section class='links'>
+            <img class='logo' alt='logo' src='./resources/logo.png' />
+            <div class='links'>
                 <a class='navBarLink' target='_blank' href='https://www.who.int/uv/faq/protect/en/index5.html'>ABOUT
                     SPF</a>
                 <a class='navBarLink' target='_blank'
                     href='https://www.bioderma.com.ro/produsele/photoderm'>PRODUCTS</a>
-            </section>
+            </div>
         </nav>
     </header>
     <main class='main'>
         <section class='intro'>
-            <h1 class='introText'>Find out the perfect SPF product you should use</h1>
-            <section class='introPic'></section>
-            <section class='description'>
+            <h1 class='introText'>Find out the best <span class='mobileSPF'> SPF </span>
+                <span class='desktopSPF'></span>product!</h1>
+            <div class='introPic'></div>
+            <div class='description'>
                 <p>
                     Choose a date and we'll tell you what products you should have in your sunscreen care kit. It's that
                     easy!
                 </p>
                 <button class='nextButton hideSection1'>NEXT</button>
-            </section>
+            </div>
         </section>
 
         <!-- second page -->
         <section class='choice sectionStyle'>
             <div class='choiceContainer'>
                 <form>
-                    <section class='bodyPart choicesDesign'>
+                    <div class='bodyPart choicesDesign'>
                         <p>I WANT SUNSCREEN FOR:</p>
                         <div class='bodyPartContainer'>
                             <input id='face' type='radio' name='bodyPart' value='face'>
                             <label for='face'>FACE
-                                <img src='https://uxwing.com/wp-content/themes/uxwing/download/12-people-gesture/woman-face.png'
+                                <img alt='face icon'
+                                    src='https://uxwing.com/wp-content/themes/uxwing/download/12-people-gesture/woman-face.png'
                                     class='faceIcon' />
                             </label>
                             <input id='body' type='radio' name='bodyPart' value='body'>
                             <label for='body'>BODY
-                                <img src='https://cdn4.iconfinder.com/data/icons/clothes-vol-1-1/48/18-512.png'
+                                <img alt='body icon'
+                                    src='https://cdn4.iconfinder.com/data/icons/clothes-vol-1-1/48/18-512.png'
                                     class='bodyIcon' />
                             </label>
                         </div>
-                    </section>
+                    </div>
 
-                    <section class='skinType choicesDesign'>
+                    <div class='skinType choicesDesign'>
                         <p>MY SKIN COLOR IS:</p>
                         <div class='skinTypeContainer'>
                             <label for='typeOne'>
@@ -86,15 +89,15 @@
                                 <div class='typeSix'></div>
                             </label>
                         </div>
-                    </section>
+                    </div>
 
-                    <section class='skinTexture choicesDesign'>
+                    <div class='skinTexture choicesDesign'>
                         <p>MY SKIN IS:</p>
                         <input id='drySkin' type='radio' name='skinTexture' value='face'>
                         <label for='drySkin'>DRY - SENSITIVE</label><br>
                         <input id='oilySkin' type='radio' name='skinTexture' value='body'>
                         <label for='oilySkin'>OILY - ACNE-PRONE</label><br>
-                    </section>
+                    </div>
                 </form>
                 <button class='nextButton hideSection2'>NEXT</button>
             </div>
@@ -115,12 +118,12 @@
 
                     <label for='hours'>SELECT HOURS:</label>
                     <select id='hours' name='hours'>
-                        <option name='earlyMorning'>6.00-8.00</option>
-                        <option name='morning'>8.00-10.00</option>
-                        <option name='lateMorning'>10.00-12.00</option>
-                        <option name='lunch'>12.00-14.00</option>
-                        <option name='afternoon'>14.00-16.00</option>
-                        <option name='evening'>16.00-18.00</option>
+                        <option id='earlyMorning'>6.00-8.00</option>
+                        <option id='morning'>8.00-10.00</option>
+                        <option id='lateMorning'>10.00-12.00</option>
+                        <option id='lunch'>12.00-14.00</option>
+                        <option id='afternoon'>14.00-16.00</option>
+                        <option id='evening'>16.00-18.00</option>
                     </select>
 
                 </div>

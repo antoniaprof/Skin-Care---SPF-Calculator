@@ -12,10 +12,10 @@ body {
   border-bottom: none;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: white;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -41,11 +41,13 @@ body {
   width: 100px;
   height: 20px;
   margin: 8px;
-  border: 1px solid black;
+  border: 1px solid #e6b0b9;
+  border-radius: 3px;
   padding: 3px;
-  color: tan;
+  color: #e6b0b9;
   text-decoration: none;
   text-shadow: 1px 1px 1px black;
+  text-align: center;
 }
 
 .intro {
@@ -62,8 +64,8 @@ body {
 .introPic {
   height: 35vh;
   margin: 0 15vw;
-  border: 1px solid tan;
-  background-image: url("../resources/66dccf0935143cb6ec839c87585ebef6.png");
+  border: 1px solid #e6b0b9;
+  background-image: url("../resources/mainPicture.png");
   background-repeat: no-repeat;
   background-size: 100% 85%;
 }
@@ -87,10 +89,11 @@ body {
   width: 200px;
   height: 30px;
   margin: 15px;
-  border: 1px solid black;
+  border: 1px solid #e6b0b9;
+  border-radius: 3px;
   background-color: white;
   text-shadow: 1px 1px 1px black;
-  color: tan;
+  color: #e6b0b9;
   font-size: 1.25em;
 }
 
@@ -104,8 +107,8 @@ body {
 }
 
 .choice {
-  display: none;
   padding: 0 40px;
+  display: none;
 }
 
 .bodyPartContainer {
@@ -121,9 +124,9 @@ body {
 
 .faceIcon,
 .bodyIcon {
-  margin: 0;
   width: 50px;
   height: 50px;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -226,13 +229,13 @@ body {
 }
 
 .choicesDesign {
-  border-bottom: 1px solid tan;
+  border-bottom: 1px solid #e6b0b9;
   padding: 10px;
 }
 
 .location {
   display: none;
-  color: tan;
+  color: #e6b0b9;
 }
 
 .locationContainer {
@@ -267,8 +270,8 @@ body {
           align-items: center;
   height: 150px;
   margin: 0 25px;
-  border-bottom: 1px solid tan;
-  border-top: 1px solid tan;
+  border-bottom: 1px solid #e6b0b9;
+  border-top: 1px solid #e6b0b9;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -288,10 +291,11 @@ body {
   width: 200px;
   height: 30px;
   margin: 15px;
-  border: 1px solid black;
+  border: 1px solid #e6b0b9;
+  border-radius: 3px;
   background-color: white;
   text-shadow: 1px 1px 1px black;
-  color: tan;
+  color: #e6b0b9;
   font-size: 1.25em;
 }
 
@@ -315,14 +319,14 @@ body {
 .displayResult {
   padding: 3vh 2vw;
   text-align: center;
-  text-shadow: 2px 2px 3px tan;
+  text-shadow: 2px 2px 3px #e6b0b9;
   color: black;
   font-size: 2em;
 }
 
 .displayResultText {
   text-align: center;
-  color: tan;
+  color: #e6b0b9;
 }
 
 .recommendedProducts {
@@ -339,10 +343,11 @@ body {
   width: 200px;
   height: 30px;
   margin: 15px;
-  border: 1px solid black;
+  border: 1px solid #e6b0b9;
+  border-radius: 3px;
   background-color: white;
   text-shadow: 1px 1px 1px black;
-  color: tan;
+  color: #e6b0b9;
   font-size: 1.25em;
 }
 
@@ -385,19 +390,20 @@ body {
 .productDescription:visited {
   text-decoration: none;
   text-align: center;
-  color: tan;
+  color: #e6b0b9;
   text-shadow: 1px 1px 1px black;
 }
 
 @media only screen and (min-width: 750px) {
   body {
-    background-image: url("../resources/66dccf0935143cb6ec839c87585ebef6.png");
+    background-image: url("../resources/mainPicture.png");
     background-size: 50% 100%;
     background-repeat: no-repeat;
   }
   input:hover,
   select:hover,
-  button:hover {
+  button:hover,
+  label:hover {
     cursor: pointer;
   }
   .navBar {
@@ -405,20 +411,20 @@ body {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border: none;
-    border-bottom: 1px solid tan;
+    border-bottom: 1px solid #e6b0b9;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
   .logo {
-    margin: 0;
     width: 100px;
     height: 100px;
+    margin: 0;
   }
   .intro {
-    float: right;
     width: 50vw;
     height: 90vh;
+    float: right;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border: none;
@@ -429,17 +435,30 @@ body {
   }
   .introText {
     margin: 150px 0 0 0;
-    border-bottom: 1px solid tan;
+    border-bottom: 1px solid #e6b0b9;
     text-shadow: 1px 1px 1px black;
-    color: tan;
+    color: #e6b0b9;
+  }
+  .mobileSPF {
+    display: none;
+  }
+  .desktopSPF {
+    width: 100px;
+    height: 140px;
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    background-image: url("../resources/product.png");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   .introPic {
     display: none;
   }
   .sectionStyle {
-    float: right;
     width: 50vw;
     height: 90vh;
+    float: right;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border: none;
@@ -450,10 +469,11 @@ body {
     width: 200px;
     height: 30px;
     margin: 15px;
-    border: 1px solid black;
+    border: 1px solid #e6b0b9;
+    border-radius: 3px;
     background-color: white;
     text-shadow: 1px 1px 1px black;
-    color: tan;
+    color: #e6b0b9;
     font-size: 1.25em;
     margin: 15px 70px;
   }
@@ -479,7 +499,7 @@ body {
     margin: 5px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    border-bottom: 1px solid tan;
+    border-bottom: 1px solid #e6b0b9;
     padding: 7px;
   }
   .locationContainer {

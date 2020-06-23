@@ -1,0 +1,10 @@
+.navBarLink {
+  margin: 8px;
+  border: 1px solid grey;
+  border-radius: 15px;
+  padding: 3px;
+  color: grey;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+}
+/*# sourceMappingURL=Links.module.css.map */

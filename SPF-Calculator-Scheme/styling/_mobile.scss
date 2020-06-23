@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+
 body {
     width: 100vw;
     margin: 0;
@@ -14,8 +15,8 @@ body {
     border-bottom: none;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    background-color: $bgColor;
     display: flex;
+    background-color: $bgColor;
     justify-content: space-around;
 }
 
@@ -36,11 +37,13 @@ body {
     width: 100px;
     height: 20px;
     margin: 8px;
-    border: $secondBorder;
+    border: $mainBorder;
+    border-radius: 3px;
     padding: 3px;
     color: $mainColor;
     text-decoration: none;
     text-shadow: 1px 1px 1px $secondColor;
+    text-align: center;
 }
 
 // first page
@@ -89,8 +92,8 @@ body {
 
 // second page
 .choice {
-    display: none;
     padding: 0 40px;
+    display: none;
 }
 
 .bodyPartContainer {
@@ -104,9 +107,9 @@ body {
 
 .faceIcon,
 .bodyIcon {
-    margin: 0;
     width: 50px;
     height: 50px;
+    margin: 0;
     display: flex;
 }
 

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,WAAW,CAAC;EACR,MAAM,EAAE,GAAG;EACX,MAAM,EAAE,GAAG,CAAC,KAAK,CCLT,IAAI;EDMZ,aAAa,EAAE,IAAI;EACnB,OAAO,EAAE,GAAG;EACZ,KAAK,ECRG,IAAI;EDSZ,eAAe,EAAE,IAAI;EACrB,WAAW,EAAE,iBAAiB;CACjC",
+    "sources": [
+        "Links.module.scss",
+        "../../../styling/_variables.scss"
+    ],
+    "names": [],
+    "file": "Links.module.css"
+}
