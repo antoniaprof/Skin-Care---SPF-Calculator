@@ -34,6 +34,9 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: white;
 }
 
@@ -65,7 +68,7 @@ body {
   height: 35vh;
   margin: 0 15vw;
   border: 1px solid #e6b0b9;
-  background-image: url("../resources/mainPicture.png");
+  background-image: url("../resources/picture.png");
   background-repeat: no-repeat;
   background-size: 100% 85%;
 }
@@ -396,7 +399,7 @@ body {
 
 @media only screen and (min-width: 750px) {
   body {
-    background-image: url("../resources/mainPicture.png");
+    background-image: url("../resources/picture.png");
     background-size: 50% 100%;
     background-repeat: no-repeat;
   }
