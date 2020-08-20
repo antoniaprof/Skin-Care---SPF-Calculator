@@ -1,236 +1,355 @@
 <!DOCTYPE html>
-<html lang='en'>
-
-<head>
-    <link rel='stylesheet' href='styling/style.css'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styling/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skin Care - SPF Calculator</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- first page -->
     <header>
-        <nav class='navBar'>
-            <img class='logo' alt='logo' src='./resources/logo.png' />
-            <div class='links'>
-                <a class='navBarLink' target='_blank' href='https://www.who.int/uv/faq/protect/en/index5.html'>ABOUT
-                    SPF</a>
-                <a class='navBarLink' target='_blank'
-                    href='https://www.bioderma.com.ro/produsele/photoderm'>PRODUCTS</a>
-            </div>
-        </nav>
+      <nav class="navBar">
+        <img class="logo" alt="logo" src="./resources/logo.png" />
+        <div class="links">
+          <a
+            class="navBarLink"
+            target="_blank"
+            href="https://www.who.int/uv/faq/protect/en/index5.html"
+            >ABOUT SPF</a
+          >
+          <a
+            class="navBarLink"
+            target="_blank"
+            href="https://www.bioderma.com.ro/produsele/photoderm"
+            >PRODUCTS</a
+          >
+        </div>
+      </nav>
     </header>
-    <main class='main'>
-        <section class='intro'>
-            <h1 class='introText'>Find out the best <span class='mobileSPF'> SPF </span>
-                <span class='desktopSPF'></span>product!</h1>
-            <div class='introPic'></div>
-            <div class='description'>
-                <p>
-                    Choose a date and we'll tell you what products you should have in your sunscreen care kit. It's that
-                    easy!
-                </p>
-                <button class='nextButton hideSection1'>NEXT</button>
-            </div>
-        </section>
+    <main class="main">
+      <section class="intro">
+        <h1 class="introText">
+          Find out the best <span class="mobileSPF"> SPF </span>
+          <span class="desktopSPF"></span>product!
+        </h1>
+        <div class="introPic"></div>
+        <div class="description">
+          <p>
+            Choose a date and we'll tell you what products you should have in
+            your sunscreen care kit. It's that easy!
+          </p>
+          <button class="nextButton hideSection1">NEXT</button>
+        </div>
+      </section>
 
-        <!-- second page -->
-        <section class='choice sectionStyle'>
-            <div class='choiceContainer'>
-                <form>
-                    <div class='bodyPart choicesDesign'>
-                        <p>I WANT SUNSCREEN FOR:</p>
-                        <div class='bodyPartContainer'>
-                            <input id='face' type='radio' name='bodyPart' value='face'>
-                            <label for='face'>FACE
-                                <img alt='face icon'
-                                    src='https://uxwing.com/wp-content/themes/uxwing/download/12-people-gesture/woman-face.png'
-                                    class='faceIcon' />
-                            </label>
-                            <input id='body' type='radio' name='bodyPart' value='body'>
-                            <label for='body'>BODY
-                                <img alt='body icon'
-                                    src='https://cdn4.iconfinder.com/data/icons/clothes-vol-1-1/48/18-512.png'
-                                    class='bodyIcon' />
-                            </label>
-                        </div>
-                    </div>
+      <!-- second page -->
+      <section class="choice sectionStyle">
+        <div class="choiceContainer">
+          <form>
+            <div class="bodyPart choicesDesign">
+              <p>I WANT SUNSCREEN FOR:</p>
+              <div class="bodyPartContainer">
+                <input id="face" type="radio" name="bodyPart" value="face" />
+                <label for="face"
+                  >FACE
+                  <img
+                    alt="face icon"
+                    src="https://uxwing.com/wp-content/themes/uxwing/download/12-people-gesture/woman-face.png"
+                    class="faceIcon"
+                  />
+                </label>
+                <input id="body" type="radio" name="bodyPart" value="body" />
+                <label for="body"
+                  >BODY
+                  <img
+                    alt="body icon"
+                    src="https://cdn4.iconfinder.com/data/icons/clothes-vol-1-1/48/18-512.png"
+                    class="bodyIcon"
+                  />
+                </label>
+              </div>
+            </div>
 
-                    <div class='skinType choicesDesign'>
-                        <p>MY SKIN COLOR IS:</p>
-                        <div class='skinTypeContainer'>
-                            <label for='typeOne'>
-                                <input id='typeOne' type='radio' name='skinColor' value='typeOne'>
-                                <div class='typeOne'></div>
-                            </label>
+            <div class="skinType choicesDesign">
+              <p>MY SKIN COLOR IS:</p>
+              <div class="skinTypeContainer">
+                <label for="typeOne">
+                  <input
+                    id="typeOne"
+                    type="radio"
+                    name="skinColor"
+                    value="typeOne"
+                  />
+                  <div class="typeOne"></div>
+                </label>
 
-                            <label for='typeTwo'>
-                                <input id='typeTwo' type='radio' name='skinColor' value='typeTwo'>
-                                <div class='typeTwo'></div>
-                            </label>
+                <label for="typeTwo">
+                  <input
+                    id="typeTwo"
+                    type="radio"
+                    name="skinColor"
+                    value="typeTwo"
+                  />
+                  <div class="typeTwo"></div>
+                </label>
 
-                            <label for='typeThree'>
-                                <input id='typeThree' type='radio' name='skinColor' value='typeThree'>
-                                <div class='typeThree'></div>
-                            </label>
+                <label for="typeThree">
+                  <input
+                    id="typeThree"
+                    type="radio"
+                    name="skinColor"
+                    value="typeThree"
+                  />
+                  <div class="typeThree"></div>
+                </label>
 
-                            <label for='typeFour'>
-                                <input id='typeFour' type='radio' name='skinColor' value='typeFour'>
-                                <div class='typeFour'></div>
-                            </label>
+                <label for="typeFour">
+                  <input
+                    id="typeFour"
+                    type="radio"
+                    name="skinColor"
+                    value="typeFour"
+                  />
+                  <div class="typeFour"></div>
+                </label>
 
-                            <label for='typeFive'>
-                                <input id='typeFive' type='radio' name='skinColor' value='typeFive'>
-                                <div class='typeFive'></div>
-                            </label>
+                <label for="typeFive">
+                  <input
+                    id="typeFive"
+                    type="radio"
+                    name="skinColor"
+                    value="typeFive"
+                  />
+                  <div class="typeFive"></div>
+                </label>
 
-                            <label for='typeSix'>
-                                <input id='typeSix' type='radio' name='skinColor' value='typeSix'>
-                                <div class='typeSix'></div>
-                            </label>
-                        </div>
-                    </div>
+                <label for="typeSix">
+                  <input
+                    id="typeSix"
+                    type="radio"
+                    name="skinColor"
+                    value="typeSix"
+                  />
+                  <div class="typeSix"></div>
+                </label>
+              </div>
+            </div>
 
-                    <div class='skinTexture choicesDesign'>
-                        <p>MY SKIN IS:</p>
-                        <input id='drySkin' type='radio' name='skinTexture' value='face'>
-                        <label for='drySkin'>DRY - SENSITIVE</label><br>
-                        <input id='oilySkin' type='radio' name='skinTexture' value='body'>
-                        <label for='oilySkin'>OILY - ACNE-PRONE</label><br>
-                    </div>
-                </form>
-                <button class='nextButton hideSection2'>NEXT</button>
+            <div class="skinTexture choicesDesign">
+              <p>MY SKIN IS:</p>
+              <input
+                id="drySkin"
+                type="radio"
+                name="skinTexture"
+                value="face"
+              />
+              <label for="drySkin">DRY - SENSITIVE</label><br />
+              <input
+                id="oilySkin"
+                type="radio"
+                name="skinTexture"
+                value="body"
+              />
+              <label for="oilySkin">OILY - ACNE-PRONE</label><br />
             </div>
-        </section>
+          </form>
+          <button class="nextButton hideSection2">NEXT</button>
+        </div>
+      </section>
 
-        <!-- third page -->
-        <section class='location sectionStyle'>
-            <div class='locationContainer'>
-                <div class='map'>
-                    <iframe class='googleMap'
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124551.3662569987!2d27.509049102569964!3d47.16246976592058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cafb7cf639ddbb%3A0x7ccb80da5426f53c!2zSWHImWk!5e0!3m2!1sro!2sro!4v1590755785073!5m2!1sro!2sro"
-                        width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""
-                        aria-hidden="false" tabindex="0"></iframe>
-                </div>
-                <div class='date'>
-                    <label for='day'>SELECT DAY:</label>
-                    <input id='day' type='date'>
+      <!-- third page -->
+      <section class="location sectionStyle">
+        <div class="locationContainer">
+          <div class="map">
+            <iframe
+              class="googleMap"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124551.3662569987!2d27.509049102569964!3d47.16246976592058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cafb7cf639ddbb%3A0x7ccb80da5426f53c!2zSWHImWk!5e0!3m2!1sro!2sro!4v1590755785073!5m2!1sro!2sro"
+              width="300"
+              height="300"
+              frameborder="0"
+              style="border: 0;"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+          <div class="date">
+            <label for="day">SELECT DAY:</label>
+            <input id="day" type="date" />
 
-                    <label for='hours'>SELECT HOURS:</label>
-                    <select id='hours' name='hours'>
-                        <option id='earlyMorning'>6.00-8.00</option>
-                        <option id='morning'>8.00-10.00</option>
-                        <option id='lateMorning'>10.00-12.00</option>
-                        <option id='lunch'>12.00-14.00</option>
-                        <option id='afternoon'>14.00-16.00</option>
-                        <option id='evening'>16.00-18.00</option>
-                    </select>
+            <label for="hours">SELECT HOURS:</label>
+            <select id="hours" name="hours">
+              <option id="earlyMorning">6.00-8.00</option>
+              <option id="morning">8.00-10.00</option>
+              <option id="lateMorning">10.00-12.00</option>
+              <option id="lunch">12.00-14.00</option>
+              <option id="afternoon">14.00-16.00</option>
+              <option id="evening">16.00-18.00</option>
+            </select>
+          </div>
+          <button class="calculateSPFBtn hideSection3">CALCULATE SPF</button>
+        </div>
+      </section>
 
-                </div>
-                <button class='calculateSPFBtn hideSection3'>CALCULATE SPF</button>
-            </div>
-        </section>
+      <!-- fourth page -->
+      <section class="result sectionStyle">
+        <div class="resultContainer">
+          <div class="displayResult"></div>
+          <p class="displayResultText">Best match:</p>
+          <div class="recommendedProducts"></div>
+          <button class="moreProducts hideSection4">MORE PRODUCTS</button>
+        </div>
+      </section>
 
-        <!-- fourth page -->
-        <section class='result sectionStyle'>
-            <div class='resultContainer'>
-                <div class='displayResult'></div>
-                <p class='displayResultText'>Best match:</p>
-                <div class='recommendedProducts'></div>
-                <button class='moreProducts hideSection4'>MORE PRODUCTS</button>
-            </div>
-        </section>
-
-        <!-- fifth page -->
-        <section class='products sectionStyle'>
-            <div class='productCard face oily SPF50+'>
-                <img class='productImage'
-                    src='https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Photoderm%20NUDE%20Touch%20SPF%2050%2B%2040ml%20teinte%20naturelle.png?itok=GhqTyxgJ'
-                    alt='Photoderm NUDE TOUCH SPF 50+' />
-                <a href='https://www.bioderma.com.ro/produsele/photoderm/nude-touch-spf-50-nuanta-foarte-deschisa'
-                    class='productDescription'>Photoderm NUDE TOUCH SPF 50+</a>
-            </div>
-            <div class='productCard face body oily sensitive SPF50+'>
-                <img class='productImage'
-                    src='https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Photoderm%20MAX%20Brume%20solaire%20France%20Europe%2028547D%20MAD%20dec%202019.png?itok=6wJzDL1U'
-                    alt='Photoderm MAX Brume SPF 50+' />
-                <a href='https://www.bioderma.com.ro/produsele/photoderm/max-brume-spf-50'
-                    class='productDescription'>Photoderm MAX Brume SPF 50+</a>
-            </div>
-            <div class='productCard face oily SPF50+'>
-                <img class='productImage'
-                    src='https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Photoderm%20MAX%20Aquafluide%20SPF%2050plus%20T40ml%2028575%20MAD%20Mai%202020%20HD.png?itok=bPtBPVNI'
-                    alt='Photoderm MAX Aquafluide SPF 50+' />
-                <a href='https://www.bioderma.com.ro/produsele/photoderm/max-aquafluide-spf-50'
-                    class='productDescription'>Photoderm MAX Aquafluide SPF 50+</a>
-            </div>
-            <div class='productCard face sensitive SPF50+'>
-                <img class='productImage'
-                    src='https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Photoderm%20MAX%20Creme%20SPF%2050%2B%2040ml.png?itok=3OoNZ7aU'
-                    alt='Photoderm MAX Cream SPF 50+' />
-                <a href='https://www.bioderma.com.ro/produsele/photoderm/max-crema-spf-50'
-                    class='productDescription'>Photoderm MAX Cream SPF 50+</a>
-            </div>
-            <div class='productCard body SPF50+'>
-                <img class='productImage'
-                    src='https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Photoderm%20MAX%20Spray%20SPF%2050%2B%20200ml%20-%2028356X%20-%20MAD%20fev%202020.png?itok=P6qi1vSa'
-                    alt='Photoderm MAX Spray SPF 50+' />
-                <a href='https://www.bioderma.com.ro/produsele/photoderm/max-spray-spf-50'
-                    class='productDescription'>Photoderm MAX Spray SPF 50+</a>
-            </div>
-            <div class='productCard body SPF50+'>
-                <img class='productImage'
-                    src='https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Photoderm%20KID%20Mousse%20SPF%2050%2B%20150ml.png?itok=2ukEv9Tj'
-                    alt='Photoderm KID Spumă SPF50+' />
-                <a href='https://www.bioderma.com.ro/produsele/photoderm/kid-spuma-spf50'
-                    class='productDescription'>Photoderm KID Spumă SPF50+</a>
-            </div>
-            <div class='productCard face sensitive SPF50+'>
-                <img class='productImage'
-                    src='https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Photoderm%20MINERAL%20SPF%2050%2B%20100g.png?itok=tdPiXAnx'
-                    alt='Photoderm Mineral Spray SPF 50+' />
-                <a href='https://www.bioderma.com.ro/produsele/photoderm/mineral-spray-spf-50'
-                    class='productDescription'>Photoderm Mineral Spray SPF 50+</a>
-            </div>
-            <div class='productCard face oily SPF30'>
-                <img class='productImage'
-                    src='https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Photoderm%20AKN%20Mat%20SPF%2030%2040ml.png?itok=xibAWHy9'
-                    alt='Photoderm AKN Mat Fluid SPF 30' />
-                <a href='https://www.bioderma.com.ro/produsele/photoderm/akn-mat-fluid-spf-30'
-                    class='productDescription'>Photoderm AKN Mat Fluid SPF 30</a>
-            </div>
-            <div class='productCard face body sensitive SPF30'>
-                <img class='productImage'
-                    src='https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Photoderm%20BRONZ%20Spray%20SPF%2030%20F200ml%2028482W%20MAD%20fev%202020.png?itok=wHCXzKuZ'
-                    alt='Photoderm Spray SPF 30' />
-                <a href='https://www.bioderma.com.ro/produsele/photoderm/spray-spf-30'
-                    class='productDescription'>Photoderm Spray SPF 30</a>
-            </div>
-            <div class='productCard face body oily sensitive SPF15'>
-                <img class='productImage'
-                    src='https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Photoderm%20Autobronzant%20F150ml%2028452C%20MAD%20Avril%202020.png?itok=6JY6wHBA'
-                    alt='Photoderm BRONZ Spray SPF 15' />
-                <a href='https://www.bioderma.com.ro/produsele/photoderm/bronz-spray-spf-15'
-                    class='productDescription'>Photoderm BRONZ Spray SPF 15</a>
-            </div>
-            <div class='productCard face oily SPF0'>
-                <img class='productImage'
-                    src='https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Sebium%20Global%20Cover%2030ml%2B2g.png?itok=aYEiZur5'
-                    alt='Sebium Global Cover' />
-                <a href='https://www.bioderma.com.ro/produsele/sebium/global-cover' class='productDescription'>Sebium
-                    Global Cover</a>
-            </div>
-            <div class='productCard face sensitive SPF0'>
-                <img class='productImage'
-                    src='https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Sensibio%20Rich%2040ml.png?itok=bAMou6xc'
-                    alt='Sensibio Rich' />
-                <a href='https://www.bioderma.com.ro/produsele/sensibio/rich' class='productDescription'>Sensibio
-                    Rich</a>
-            </div>
-        </section>
-
+      <!-- fifth page -->
+      <section class="products sectionStyle">
+        <div class="productCard face oily SPF50+">
+          <img
+            class="productImage"
+            src="https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Photoderm%20NUDE%20Touch%20SPF%2050%2B%2040ml%20teinte%20naturelle.png?itok=GhqTyxgJ"
+            alt="Photoderm NUDE TOUCH SPF 50+"
+          />
+          <a
+            href="https://www.bioderma.com.ro/produsele/photoderm/nude-touch-spf-50-nuanta-foarte-deschisa"
+            class="productDescription"
+            >Photoderm NUDE TOUCH SPF 50+</a
+          >
+        </div>
+        <div class="productCard face body oily sensitive SPF50+">
+          <img
+            class="productImage"
+            src="https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Photoderm%20MAX%20Brume%20solaire%20France%20Europe%2028547D%20MAD%20dec%202019.png?itok=6wJzDL1U"
+            alt="Photoderm MAX Brume SPF 50+"
+          />
+          <a
+            href="https://www.bioderma.com.ro/produsele/photoderm/max-brume-spf-50"
+            class="productDescription"
+            >Photoderm MAX Brume SPF 50+</a
+          >
+        </div>
+        <div class="productCard face oily SPF50+">
+          <img
+            class="productImage"
+            src="https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Photoderm%20MAX%20Aquafluide%20SPF%2050plus%20T40ml%2028575%20MAD%20Mai%202020%20HD.png?itok=bPtBPVNI"
+            alt="Photoderm MAX Aquafluide SPF 50+"
+          />
+          <a
+            href="https://www.bioderma.com.ro/produsele/photoderm/max-aquafluide-spf-50"
+            class="productDescription"
+            >Photoderm MAX Aquafluide SPF 50+</a
+          >
+        </div>
+        <div class="productCard face sensitive SPF50+">
+          <img
+            class="productImage"
+            src="https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Photoderm%20MAX%20Creme%20SPF%2050%2B%2040ml.png?itok=3OoNZ7aU"
+            alt="Photoderm MAX Cream SPF 50+"
+          />
+          <a
+            href="https://www.bioderma.com.ro/produsele/photoderm/max-crema-spf-50"
+            class="productDescription"
+            >Photoderm MAX Cream SPF 50+</a
+          >
+        </div>
+        <div class="productCard body SPF50+">
+          <img
+            class="productImage"
+            src="https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Photoderm%20MAX%20Spray%20SPF%2050%2B%20200ml%20-%2028356X%20-%20MAD%20fev%202020.png?itok=P6qi1vSa"
+            alt="Photoderm MAX Spray SPF 50+"
+          />
+          <a
+            href="https://www.bioderma.com.ro/produsele/photoderm/max-spray-spf-50"
+            class="productDescription"
+            >Photoderm MAX Spray SPF 50+</a
+          >
+        </div>
+        <div class="productCard body SPF50+">
+          <img
+            class="productImage"
+            src="https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Photoderm%20KID%20Mousse%20SPF%2050%2B%20150ml.png?itok=2ukEv9Tj"
+            alt="Photoderm KID Spumă SPF50+"
+          />
+          <a
+            href="https://www.bioderma.com.ro/produsele/photoderm/kid-spuma-spf50"
+            class="productDescription"
+            >Photoderm KID Spumă SPF50+</a
+          >
+        </div>
+        <div class="productCard face sensitive SPF50+">
+          <img
+            class="productImage"
+            src="https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Photoderm%20MINERAL%20SPF%2050%2B%20100g.png?itok=tdPiXAnx"
+            alt="Photoderm Mineral Spray SPF 50+"
+          />
+          <a
+            href="https://www.bioderma.com.ro/produsele/photoderm/mineral-spray-spf-50"
+            class="productDescription"
+            >Photoderm Mineral Spray SPF 50+</a
+          >
+        </div>
+        <div class="productCard face oily SPF30">
+          <img
+            class="productImage"
+            src="https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Photoderm%20AKN%20Mat%20SPF%2030%2040ml.png?itok=xibAWHy9"
+            alt="Photoderm AKN Mat Fluid SPF 30"
+          />
+          <a
+            href="https://www.bioderma.com.ro/produsele/photoderm/akn-mat-fluid-spf-30"
+            class="productDescription"
+            >Photoderm AKN Mat Fluid SPF 30</a
+          >
+        </div>
+        <div class="productCard face body sensitive SPF30">
+          <img
+            class="productImage"
+            src="https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Photoderm%20BRONZ%20Spray%20SPF%2030%20F200ml%2028482W%20MAD%20fev%202020.png?itok=wHCXzKuZ"
+            alt="Photoderm Spray SPF 30"
+          />
+          <a
+            href="https://www.bioderma.com.ro/produsele/photoderm/spray-spf-30"
+            class="productDescription"
+            >Photoderm Spray SPF 30</a
+          >
+        </div>
+        <div class="productCard face body oily sensitive SPF15">
+          <img
+            class="productImage"
+            src="https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Photoderm%20Autobronzant%20F150ml%2028452C%20MAD%20Avril%202020.png?itok=6JY6wHBA"
+            alt="Photoderm BRONZ Spray SPF 15"
+          />
+          <a
+            href="https://www.bioderma.com.ro/produsele/photoderm/bronz-spray-spf-15"
+            class="productDescription"
+            >Photoderm BRONZ Spray SPF 15</a
+          >
+        </div>
+        <div class="productCard face oily SPF0">
+          <img
+            class="productImage"
+            src="https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Sebium%20Global%20Cover%2030ml%2B2g.png?itok=aYEiZur5"
+            alt="Sebium Global Cover"
+          />
+          <a
+            href="https://www.bioderma.com.ro/produsele/sebium/global-cover"
+            class="productDescription"
+            >Sebium Global Cover</a
+          >
+        </div>
+        <div class="productCard face sensitive SPF0">
+          <img
+            class="productImage"
+            src="https://www.bioderma.com.ro/sites/ro/files/styles/ultrawide_product_list_thumbnail/public/products/Sensibio%20Rich%2040ml.png?itok=bAMou6xc"
+            alt="Sensibio Rich"
+          />
+          <a
+            href="https://www.bioderma.com.ro/produsele/sensibio/rich"
+            class="productDescription"
+            >Sensibio Rich</a
+          >
+        </div>
+      </section>
     </main>
-    <script type='module' src='./modules/script.js'></script>
-</body>
-
+    <script type="module" src="./modules/script.js"></script>
+  </body>
 </html>

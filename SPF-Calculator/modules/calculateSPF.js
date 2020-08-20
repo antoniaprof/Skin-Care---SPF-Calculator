@@ -1,6 +1,5 @@
-import { getApi } from './getApi.js'
-
+import { getApi } from "./getApi.js";
 
 export const calculateSPF = () => {
-    getApi();
-}
+  getApi();
+};
