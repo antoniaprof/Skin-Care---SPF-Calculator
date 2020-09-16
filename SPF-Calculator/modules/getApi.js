@@ -6,11 +6,11 @@ import { productResult } from "./productResult.js";
 import { showSPFValue } from "./showSPFValue.js";
 
 export const getApi = () => {
-  let lat = "47.16";
-  let lng = "27.59";
-  let alt = "85m";
-  let ozone = "220du";
-  let dt = document.querySelector("#day").value;
+  const lat = "47.16";
+  const lng = "27.59";
+  const alt = "85m";
+  const ozone = "220du";
+  const dt = document.querySelector("#day").value;
 
   const url =
     "https://api.openuv.io/api/v1/forecast?lat=" +

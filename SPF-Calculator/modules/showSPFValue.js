@@ -2,7 +2,7 @@
 import { SPFvalue } from "./SPFvalue.js";
 
 export const showSPFValue = (value) => {
-  let displayResult = document.querySelector(".displayResult");
+  const displayResult = document.querySelector(".displayResult");
   if (SPFvalue(value) === "SPF0") {
     displayResult.textContent =
       "NO SPF NEDEED! CONSIDER WEARING A HYDRATING CREAM";

@@ -18,5 +18,5 @@ nextPage(".hideSection4", ".result", ".products");
 // getAPI -> uvIndex -> calculateMaximum -> typeOne/typeTwo... -> SPFvalue -> bodyPart -> skinTexture
 // -> skinTextureValue -> productResult -> calculateSPF
 
-let SPFBtn = document.querySelector(".calculateSPFBtn");
+const SPFBtn = document.querySelector(".calculateSPFBtn");
 SPFBtn.addEventListener("click", calculateSPF);

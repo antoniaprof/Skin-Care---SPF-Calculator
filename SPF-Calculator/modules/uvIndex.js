@@ -2,34 +2,51 @@
 import { calculateMaximum } from "./calculateMaximum.js";
 
 export const uvIndex = (value) => {
-  let earlyMorning = [value[4], value[5]].map((obj) => obj.uv);
-  let morning = [value[6], value[7]].map((obj) => obj.uv);
-  let lateMorning = [value[8], value[9]].map((obj) => obj.uv);
-  let lunch = [value[10], value[11]].map((obj) => obj.uv);
-  let afternoon = [value[11], value[12]].map((obj) => obj.uv);
-  let evening = [value[12], value[13]].map((obj) => obj.uv);
+  const hours = (first, last) => {
+    value
+      .filter(
+        (obj) =>
+          first <= new Date(obj.uv_time).getHours - 3 &&
+          new Date(obj.uv_time).getHours - 3 <= last
+      )
+      .map((obj) => obj.uv);
+  };
 
-  let hours = document.querySelector("#hours");
-  let uvIndexValue = 0;
-  let option = hours.selectedIndex;
-  switch (option) {
+  const earlyMorning = hours(6, 8);
+  const morning = hours(8, 10);
+  const lateMorning = hours(10, 12);
+  const lunch = hours(12, 14);
+  const afternoon = hours(14, 16);
+  const evening = hours(16, 18);
+
+  const chosedHours = document.querySelector("#hours");
+  const chosedOption = chosedHours.selectedIndex;
+
+  let option = "";
+  switch (chosedOption) {
     case 0:
-      uvIndexValue = calculateMaximum(earlyMorning);
+      option = earlyMorning;
       break;
     case 1:
-      uvIndexValue = calculateMaximum(morning);
+      option = morning;
       break;
     case 2:
-      uvIndexValue = calculateMaximum(lateMorning);
+      option = lateMorning;
       break;
     case 3:
-      uvIndexValue = calculateMaximum(lunch);
+      option = lunch;
       break;
     case 4:
-      uvIndexValue = calculateMaximum(afternoon);
+      option = afternoon;
       break;
     case 5:
-      uvIndexValue = calculateMaximum(evening);
+      option = evening;
   }
+
+  let uvIndexValue = 0;
+  if (option !== undefined) {
+    uvIndexValue = calculateMaximum(option);
+  }
+
   return uvIndexValue;
 };
