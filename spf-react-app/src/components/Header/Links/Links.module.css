@@ -1,10 +1,18 @@
-.navBarLink {
-  margin: 8px;
-  border: 1px solid grey;
-  border-radius: 15px;
-  padding: 3px;
+.link {
+  margin: 18rem;
+  padding: 3rem;
   color: grey;
   text-decoration: none;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1rem 1rem 1rem black;
+  font-size: 25rem;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=Links.module.css.map */

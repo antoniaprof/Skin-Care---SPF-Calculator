@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAEA,AAAA,OAAO,CAAC;EACN,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,UAAU;EACtB,MAAM,EAAE,IAAI;EACZ,aAAa,EAAE,GAAG,CAAC,KAAK,CCNd,IAAI;EDOd,eAAe,EAAE,aAAa;CAC/B",
     "sources": [
-        "Header.module.scss"
+        "Header.module.scss",
+        "../../styling/_variables.scss"
     ],
     "names": [],
     "file": "Header.module.css"

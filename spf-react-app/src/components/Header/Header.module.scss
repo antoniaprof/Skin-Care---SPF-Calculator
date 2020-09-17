@@ -1,0 +1,9 @@
+@import "../../styling/variables";
+
+.header {
+  height: 10vh;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid $mainColor;
+  justify-content: space-between;
+}

@@ -1,16 +1,14 @@
-import React from 'react';
-import Links from './Links/Links';
-import styles from './Header.module.scss'
-
+import React from "react";
+import Links from "./Links/Links";
+import styles from "./Header.module.scss";
 
 const Header = () => {
-    return (
-        <header className={styles.navBar}>
-            <nav className={styles.links}>
-            <Links />
-            </nav>       
-        </header>
-    );
+  return (
+    <header className={styles.header}>
+      {/* <Logo/> */}
+      <Links />
+    </header>
+  );
 };
 
 export default Header;

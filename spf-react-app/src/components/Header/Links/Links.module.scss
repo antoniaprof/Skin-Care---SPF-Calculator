@@ -1,12 +1,15 @@
 @import "../../../styling/variables";
 
-
-.navBarLink {
-    margin: 8px;
-    border: 1px solid $mainColor;
-    border-radius: 15px;
-    padding: 3px;
+.link {
+    margin: 18rem;
+    padding: 3rem;
     color: $mainColor;
     text-decoration: none;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1rem 1rem 1rem black;
+    font-size: 25rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
 }
