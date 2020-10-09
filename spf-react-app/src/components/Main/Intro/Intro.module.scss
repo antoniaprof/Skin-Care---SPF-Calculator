@@ -1,0 +1,14 @@
+@import "../../../styling/variables.scss";
+
+.intro {
+  max-width: 700rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.introText {
+  color: $mainColor;
+  text-shadow: 2rem 2rem 2rem black;
+  font-size: 50rem;
+}
